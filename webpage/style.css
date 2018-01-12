@@ -5,6 +5,7 @@ p{ line-height: 1.4em;
 width: 90%;
 height: auto;
 margin-left: 30px;
+font-size: 1.2em;
 }
 h1, h2, h3, h4{
     color: orange;
@@ -19,7 +20,10 @@ h1{ font-size: 1.7em;
 h2{ font-size: 1.5em; 
 	margin-top: 30px;
 	}
-h5{ font-size: 1.2em; 
+/*h4{ font-size: 1.2em; 
+	margin-left: 30px;
+	}*/
+h5{ font-size: 1.3em; 
 	margin-left: 30px;
 	}
 .author-social2{display:inline-block;margin-bottom:5px;font-size:14px;font-size:.875rem;color:#111}
@@ -129,7 +133,7 @@ body{
 }
 
 img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
