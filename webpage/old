@@ -1,0 +1,35 @@
+<div class = parallel style="width: 100%">  
+                <div class = image>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="http://people.tamu.edu/~sina.mohseni/xai-ui" target="_blank"><img  src="./ui-xai.png" width="380"></a>
+                    <br>
+                    <br>
+                    <div  id="links" >  <!-- style="margin-left:2em" -->
+                        <a href="https://github.com/SinaMohseni/UI-Healthcare-Classification" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-github-square fa-lg"></i> Github</a>  
+                        <a href="http://people.tamu.edu/~sina.mohseni/xai-ui" class="author-social2" target="_blank"><i class="fa fa-laptop fa-lg" style="margin-left:1em"></i> Demo</a>
+                        <a href="https://www.youtube.com/watch?v=U7Lrb5baeYs&t=" class="author-social2" target="_blank"><i class="fa fa-youtube-play fa-lg" style="margin-left:1em"></i> Video</a>
+                        <!-- fa-vimeo-square -->
+                    </div>
+                </div>
+                <div class = no_parallel>
+                    <h5><b>Interpretable Classification for Information Extraction from Online Healthcare Forums</b></h5>           
+                    <br>
+                    <p>
+                        Interpretable machine learning is a branch of mashin learning systems that are able to give explanations to 
+                        the user (human) about their output (decisions). 
+                        Why do we need explanations from machines? How can we obtain explanation from complex deep neural network? and How can we measure 
+                        quality of explanations? are interesting research questions in both HCI and Maching Learning communities.
+                    </p>
+                    <p> 
+                        This project is about designing a user interface for users in healthcare community.
+                        We design a user interface for text classifier which classifies articles from online healthcare forums into symptom and medication topics.
+                        The user interface highlights words and phrases related to 
+                        This user interface is built to support explanations from healthcare data classifiers presented in 
+                        <a href="https://www.hindawi.com/journals/jhe/2017/2460174/" target="_blank">this paper</a>
+                        from members of our XAI project team.
+
+                    </p>
+                </div>
+            </div>
