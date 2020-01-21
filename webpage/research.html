@@ -22,11 +22,132 @@
 			<ul>
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="./research.html">Research</a></li>
-				<li><a href="./publications.html">Publications</a></li>
+				<li><a href="https://scholar.google.com/citations?hl=en&user=mmOp5m4AAAAJ&view_op=list_works&sortby=pubdate">Publications</a></li>  <!-- ./publications.html -->
 				<li><a href="../papers/cv.pdf">Resume</a></li>
 			</ul>	
 		</div>
 		
+
+		<!--         //////////////// Machine Learning Safety /////////////////                         -->
+		<div id="content">  <!-- class = parallel -->
+			<h1><b>Machine Learning Safety</b></h1>
+
+
+			<!--  //////////////// Sub-project 1 //////////////////                         -->
+			
+			<div class = parallel style="width: 100%">  
+				<div class = image>
+					<br>
+					<br>
+					<br>
+					<a><img  src="./ml-safety-2.png" width="380"></a>	
+					<!-- <a href="" target="_blank"><img  src="./tool2.png" width="380"></a> -->
+					<br>
+					<br>
+					<div  id="links">  <!-- "margin-left:2em -->
+						<a href="https://arxiv.org/pdf/1912.09630.pdf" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+					</div>
+				</div>
+				<div class = no_parallel>
+					<h5><b>Practical Solutions for Machine Learning Safety in Autonomous Vehicles</b></h5>
+					<p>
+					Autonomous vehicles rely on machine learning to solve challenging tasks in perception
+					and motion planning. 
+					However, automotive software safety standards have not fully evolved to address the challenges of machine learning safety such as interpretability, verification, and performance limitations.
+					In this paper, we review and organize practical machine learning safety techniques that can complement engineering safety for machine learning based software in autonomous vehicles. 
+					Our organization maps safety strategies to state-of-the-art machine learning techniques in
+					order to enhance dependability and safety of machine learning algorithms. 
+					We also discuss security limitations and user experience aspects of machine learning components in autonomous vehicles. 
+					</p>
+
+					<p>
+					We first briefly review the two main automotive industry safety standards for E/E components (ISO 26262 and ISO/PAS 21448) and identify their five fundamental gaps with machine learning algorithms. 
+					To address these limitations, we review state-of-the-art algorithmic safety techniques from machine learning research on 1) error detectors and 2) model robustness. 
+					We present three of our own implementations for safety-critical applications to achieve Safe Fail and improve Safety Margins in deep learning algorithms.
+					</p>
+				</div>
+			</div>
+
+			<!--  //////////////// Sub-project 2 //////////////////                         -->
+			
+			<div class = parallel style="width: 100%">  
+				<div class = image>
+					<br>
+					<br>
+					<br>
+					<br>
+					<a><img  src="./self-supervise.png" width="380"></a>
+					<br>
+					<div  id="links">  <!-- "margin-left:2em -->
+						<a href="./papers/Self_Supervised_Learning_for_Generalizable_Out_of_Distribution_Detection.pdf" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+					</div>
+				</div>
+				<div class = no_parallel>
+					<!-- <br>
+					<br> -->
+					<h5><b>Self-Supervised Learning for Generalizable Out-of-Distribution Detection</b></h5>			
+					<p>
+						The real-world deployment of Deep Neural Networks (DNNs) in safety-critical applications such as autonomous vehicles needs to address a variety of DNNs' vulnerabilities, one of which being detecting and rejecting out-of-distribution outliers that might result in unpredictable fatal errors.
+						We propose a new technique relying on self-supervision to simultaneously train in-distribution classifiers and out-of-distribution detectors in one network.
+						Specifically, we use additional nodes as reject functions in the last layer of our neural network.
+						We use a self-supervised approach to train reject functions with free unlabeled OOD samples and the classifier functions with a labeled in-distribution training set.
+						Our technique does not need to pre-know the distribution of targeted OOD samples and incur no extra overheads compared to other methods.
+					</p>
+					<p> 
+						Our empirical evaluation experiments shows that: 1- Our method learns to generalize nicely on unseen OOD distributions.  In particular, learning such generalizable OOD features is important for the detection robustness when a mixed of unseen distributions are present.
+						2- Different from existing methods our method does not need tuning with a sub-sample of the targeted OOD set, and therefore can use any ``free'' unlabeled OOD set for training.
+						3- Our method can also benefit in-distribution classification accuracy, via rejecting ambiguous samples near the boundaries of the training set distribution.
+					</p>
+				</div>
+			</div>
+
+
+			<!--  //////////////// Sub-project 2 //////////////////                         -->
+			
+			<div class = parallel style="width: 100%">  
+				<div class = image>
+					<br>
+					<br>	
+					<br>
+					<br>	
+					<br>
+					<br>	
+					<a><img  src="./model-failure.png" width="380"></a>
+					<br>
+					<br>
+					<div  id="links">  <!-- "margin-left:2em -->
+						<a href="https://arxiv.org/pdf/1905.07679.pdf" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Short Paper</a>
+					</div>
+				</div>
+				<div class = no_parallel>
+					<!-- <br>
+					<br> -->
+					<h5><b>Predicting Model Failure using Saliency Maps in Autonomous Driving Systems</b></h5>			
+					<p>
+						While machine learning systems show high success rate in many complex tasks, research shows they can also fail in very unexpected situations. 
+						Rise of machine learning products in safety-critical industries cause an increase in attention in evaluating model robustness and estimating failure probability in machine learning systems.
+						The goal of this project is to predict model failure in safety-critical applications, such as automated vehicles, where failure costs are extremely high compared to other commercial machine learning products, like targeted advertisement algorithms.
+						We implement and review the preliminary results of our failure predictor model on an autonomous vehicle steering control system as an example of safety-critical applications.
+					</p>
+					<p> 
+						In our recent paper, we presented an error detector for regression models in autonomous vehicle applications.
+						We proposed a new design which trains a student model (failure predictor) for predicting the teacher model's (main model) error at run-time. 
+						The figure shows how the student model learns teacher model's prediction loss on a validation set in order to predict its failures on the test set.
+						Specifically, we train the student model using the saliency maps from the main model to improve failure prediction performance. 
+						We evaluate our failure predictor model based on prediction error and the driving safety gained by this system. 
+					</p>
+
+					
+				</div>
+			</div>
+
+			<!-- <div style="margin-bottom: 300px"> </div> -->
+						
+		</div>
+
+		<br>
+		<br>
+
 		<!--                          //////////////// Explainable Machine Learning //////////////////                         -->
 		<div id="content">  <!-- class = parallel -->
 			<h1><b>Interpretable Machine Learning</b></h1>
@@ -40,15 +161,15 @@
 					<br>
 					<br>
 					<br>
-					<a><img  src="./model.png" width="380"></a>	
+					<a><img  src="./model2.png" width="380"></a>	
 					<!-- <a href="" target="_blank"><img  src="./tool2.png" width="380"></a> -->
 					<br>
 					<br>
 					<div  id="links">  <!-- "margin-left:2em -->
-						<a class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
-						<a href="https://docs.google.com/presentation/d/1FDNgCdUjY05_-KrA_h8epe8WXb-fOeYsno2n0yrCBLs/edit#slide=id.p" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Presentation</a>
+						<a href="https://arxiv.org/pdf/1811.11839.pdf" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+						<a href="https://docs.google.com/presentation/d/1FDNgCdUjY05_-KrA_h8epe8WXb-fOeYsno2n0yrCBLs/edit#slide=id.p" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Presentation</a> 
 						<a href="https://docs.google.com/spreadsheets/d/1PP1aSOlbyhlSB1KtgtmOmuUpKMeZy7EvgfDMcwHqd3k/edit#gid=0" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Reference Table</a>
-						<!-- <a href="https://github.com/SinaMohseni/Text-classification-explanation-evaluation" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-github-square fa-lg"></i> Github</a>   -->
+						<a href="https://github.com/SinaMohseni/awesome-XAI-Evaluation" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-github-square fa-lg"></i> Github</a>  
 						<!-- <a href="https://github.com/SinaMohseni/ML-Interpretability-Evaluation-Benchmark" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-database"></i> Dataset</a> -->
 						<!-- <a href="http://people.tamu.edu/~sina.mohseni/expevl" class="author-social2" target="_blank"><i class="fa fa-laptop fa-lg" style="margin-left:1em"></i> Demo</a> -->
 						<!-- fa-vimeo-square -->
@@ -63,24 +184,22 @@
 						The need for interpretable and accountable intelligent system gets sensible as artificial intelligence plays more role in human life.
 						Explainable artificial intelligence systems can be a solution by self-explaining the reasoning behind the decisions and predictions of the intelligent system.
 						Researchers from different disciplines work together to define, design and evaluate interpretable intelligent systems for the user.
-						Our work supports the different evaluation goals in interpretable machine learning research by a thorough review of evaluation methodologies used in machine-explanation research across the fields of human-computer interaction, visual analytics, and machine learning.
-						We present a 2D categorization of interpretable machine learning evaluation methods and show a mapping between user groups and evaluation measures.
-						Further, we address the essential factors and steps for a right evaluation plan by proposing a nested model for design and evaluation of explainable artificial intelligence systems.
+						<!-- Our work supports the different design and evaluation goals in interpretable machine learning research by a thorough review of evaluation methodologies used in machine-explanation research across the fields of human-computer interaction, visual analytics, and machine learning. -->
+						<!-- We present a 2D categorization of interpretable machine learning evaluation methods and show a mapping between user groups and evaluation measures. -->
+						<!-- Further, we address the essential factors and steps for a right evaluation plan by proposing a nested model for design and evaluation of explainable artificial intelligence systems. -->
+						My work supports the different design and evaluation goals in interpretable machine learning research by proposing a comprehansive design and evaluation framework for interpretable intelligent systems.
 					</p>
 					<p>
-						Our models for design and evaluation of interpretable machine learning model is consist of three layers. 
-						The innermost layer aims to design interpretable models (or generate machine explanations) and verify explanations trustworthiness.
-						Machine learning experts contribute by designing interpretable models and evaluate the explanations' trustworthiness.
-						This second layer can be viewed as the translator for an XAI system.
+						Our nested model for design and evaluation of interpretable machine learning is consist of three layers. 
+						Each layer of our model illustrates a cycle of design goal (on the Design Pole) and its evaluation measures (on the Evaluation Pole).
+						The outer layer demonstrates problem characterization step which is coupled with evaluation of high-level system outcomes with end-users.
+						Evaluation designs in this layer are very much dependent on the application domain, and various subjective and objective measures can be used to evaluate XAI system success with regard to the expected outcomes.
+						The middle layer shows interface and visualization design step following with human understandability evaluation goals.
 						The goal of the middle layer is to design human understandable explanations, explanation agents and interfaces, and visual analytics tools and verify their usability.
 						HCI and visual analytics designers employ user-centered design principles and verify designs with subjective evaluations of satisfaction and   mental models for different types of users.
-						The outermost layer focuses on outcomes of using the XAI system.
-						The aim of this layer is to verify what the intelligible design has gained for the end-user.
-						In other words, the goal is to measure XAI system's impact on user trust, reliance, and human-machine  performance in performing tasks.
-						Evaluation designs in this layer are very much dependent on the application domain, and various subjective and objective measures can be used to evaluate XAI system success with regard to the expected outcomes.
+						The innermost layer presents design and evaluation of credible interpretable machine learning algorithms.
+						Machine learning experts contribute by designing interpretable models and evaluate the explanations' trustworthiness.
 					</p>
-
-					
 				</div>
 			</div>
 
@@ -88,11 +207,14 @@
 			
 			<div class = parallel style="width: 100%">  
 				<div class = image>
+					<br>
+					<br>
+					<br>
 					<a href="https://github.com/SinaMohseni/ML-Interpretability-Evaluation-Benchmark" target="_blank"><img  src="./benchmark.png" width="380"></a>
 					<br>
 					<br>
 					<div  id="links">  <!-- "margin-left:2em -->
-						<a class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+						<a href="https://arxiv.org/pdf/1801.05075.pdf" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
 						<a href="../papers/Benchmark.pdf" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Short Paper</a>
 						<!-- <a href="https://github.com/SinaMohseni/Text-classification-explanation-evaluation" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-github-square fa-lg"></i> Github</a>   -->
 						<a href="https://github.com/SinaMohseni/ML-Interpretability-Evaluation-Benchmark" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-database"></i> Dataset</a>
@@ -144,7 +266,8 @@
 					<br>
 					<br>
 					<div  id="links">  <!-- "margin-left:2em -->
-						<a class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+						<a href= "https://dl.acm.org/citation.cfm?doid=3308558.3314119" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a>
+						<!-- <a href= "https://arxiv.org/pdf/1811.12349.pdf" class="author-social2" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Paper </a> -->
 						<a href="https://docs.google.com/presentation/d/1FDNgCdUjY05_-KrA_h8epe8WXb-fOeYsno2n0yrCBLs/edit#slide=id.p" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-file-pdf-o fa-lg"></i> Presentation</a>
 						<!-- <a href="https://github.com/SinaMohseni/Text-classification-explanation-evaluation" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-github-square fa-lg"></i> Github</a>   -->
 						<!-- <a href="https://github.com/SinaMohseni/ML-Interpretability-Evaluation-Benchmark" class="author-social2" target="_blank" style="margin-left:1em"><i class="fa fa-database"></i> Dataset</a> -->
