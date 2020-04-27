@@ -54,7 +54,7 @@ h6{
 /* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
  /*width: 80%; margin: 0 auto;*/
 body{
-    font-family: sans-serif; font-size: 80%; line-height: 1.2em; background: #eee;
+    font-family: sans-serif; font-size: 100%; line-height: 1.2em; background: #eee;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -90,6 +90,7 @@ body{
 }
 #nav{
 	width: 70%;
+	margin-top: 2%;
 	display: inline-block;
 	text-align: right;
 	float: right;
@@ -97,7 +98,7 @@ body{
 	#nav ul{}
 		#nav ul li{
 			display: inline-block;
-			height: 5%;
+			height: 10%;
 		}
 			#nav ul li a{
 				padding: 7px;
@@ -203,3 +204,9 @@ img {
 /* multiple styles seperated by a , */
 #content,
 ul li a{ box-shadow: 0px 1px 1px #999; }
+
+.tiny-logo{
+	display:inline;
+	width:21px;
+	vertical-align:middle
+}
